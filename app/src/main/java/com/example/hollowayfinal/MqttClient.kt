@@ -6,7 +6,7 @@ import android.util.Log
 import info.mqtt.android.service.Ack
 //import org.eclipse.paho.android.service.MqttAndroidClient
 import org.eclipse.paho.client.mqttv3.*
-import info.mqtt.android.service.MqttAndroidClient;
+import info.mqtt.android.service.MqttAndroidClient
 
 
 class MQTTClient(
@@ -67,3 +67,5 @@ class MQTTClient(
             mqttClient.disconnect()
         }
     }
+
+
