@@ -83,6 +83,7 @@ class GraphsView : AppCompatActivity() {
 
 
         nf.maximumFractionDigits = 3
+        nf.maximumIntegerDigits = 3
         graph2.gridLabelRenderer.labelFormatter = DefaultLabelFormatter(nf, nf)
 
 
