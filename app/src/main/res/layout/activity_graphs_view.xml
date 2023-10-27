@@ -11,11 +11,11 @@
         android:layout_width="0dp"
         android:layout_height="200dip"
         android:layout_marginStart="8dp"
-        android:layout_marginTop="36dp"
+        android:layout_marginTop="8dp"
         android:layout_marginEnd="8dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/connectButton" />
+        app:layout_constraintTop_toTopOf="parent" />
 
     <com.jjoe64.graphview.GraphView
         android:id="@+id/graph2"

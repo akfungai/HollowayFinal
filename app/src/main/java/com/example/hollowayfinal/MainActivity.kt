@@ -4,24 +4,15 @@ package com.example.hollowayfinal
 //import info.mqtt.android.service.MqttAndroidClient;
 
 
-import android.content.ContentValues.TAG
 import android.content.Intent
 import android.os.Bundle
 import android.text.method.ScrollingMovementMethod
-import android.util.Log
 import android.widget.Button
+import android.widget.CheckBox
+import android.widget.EditText
 import android.widget.TextView
-import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
-import com.jjoe64.graphview.DefaultLabelFormatter
-import com.jjoe64.graphview.GraphView
-import com.jjoe64.graphview.series.DataPoint
-import com.jjoe64.graphview.series.LineGraphSeries
-import org.eclipse.paho.client.mqttv3.*
-import org.json.JSONObject
-import java.text.NumberFormat
-import java.text.SimpleDateFormat
-import java.util.Locale
+
 
 
 class MainActivity : AppCompatActivity() {
@@ -37,6 +28,10 @@ class MainActivity : AppCompatActivity() {
 
         val connectButton: Button = findViewById(R.id.connectButton)
 
+        val checkBox: CheckBox = findViewById(R.id.checkBox)
+
+        val SubscribeTextView: EditText = findViewById(R.id.SubscribeTextView)
+
 
 
         connectButton.setOnClickListener {
@@ -44,13 +39,22 @@ class MainActivity : AppCompatActivity() {
 
             val intent = Intent(this, GraphsView::class.java)
             startActivity(intent)
-
-
-
-
-
-
         }
+
+        checkBox.setOnCheckedChangeListener { _, isChecked ->
+            if (isChecked) {
+                // When CheckBox is checked
+                SubscribeTextView.alpha = 0.0f // Make TextView transparent
+                SubscribeTextView.isClickable = false // Make TextView unclickable
+            } else {
+                // When CheckBox is unchecked
+                SubscribeTextView.alpha = 1.0f // Make TextView opaque
+                SubscribeTextView.isClickable = true // Make TextView clickable
+            }
+        }
+
+
+
 
 
 
