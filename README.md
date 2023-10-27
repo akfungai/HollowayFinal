@@ -5,4 +5,5 @@ The app connects with the things network to display data gathered by the sensor 
 So far the application works to display temperature and pressure data
 
 
-![image](https://github.com/akfungai/HollowayFinal/assets/57831808/666c1139-e2db-4203-aed1-338cf38de43c)
+![image](https://github.com/akfungai/HollowayFinal/assets/57831808/685073fa-ef65-4291-97dd-f6151b6b4afd)
+
