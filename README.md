@@ -11,6 +11,6 @@ So far the application works to display temperature and pressure data
 ![image](https://github.com/akfungai/HollowayFinal/assets/57831808/f3eb668d-df7e-4268-903a-c2303167dec5)
 
 
-![image](https://github.com/akfungai/HollowayFinal/assets/57831808/d72373c5-18e2-4701-b91d-a02184e18799)
+![image](https://github.com/akfungai/HollowayFinal/assets/57831808/6b711c2f-28fe-4440-950a-2eb491015980)
 
 
