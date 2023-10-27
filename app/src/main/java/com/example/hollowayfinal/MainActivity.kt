@@ -3,11 +3,8 @@ package com.example.hollowayfinal
 //import org.eclipse.paho.android.service.MqttAndroidClient removed
 //import info.mqtt.android.service.MqttAndroidClient;
 
-import android.app.NotificationChannel
-import android.app.NotificationManager
+
 import android.content.ContentValues.TAG
-import android.content.Context
-import android.os.Build
 import android.os.Bundle
 import android.text.method.ScrollingMovementMethod
 import android.util.Log
@@ -15,8 +12,6 @@ import android.widget.Button
 import android.widget.TextView
 import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
-import androidx.core.app.NotificationCompat
-import androidx.core.app.NotificationManagerCompat
 import com.jjoe64.graphview.DefaultLabelFormatter
 import com.jjoe64.graphview.GraphView
 import com.jjoe64.graphview.series.DataPoint
@@ -34,6 +29,7 @@ class MainActivity : AppCompatActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
+
         setContentView(R.layout.activity_main)
 
         val messageTextView: TextView = findViewById(R.id.textView)
