@@ -80,11 +80,11 @@
         android:id="@+id/DataTargets"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="16dp"
-        android:layout_marginTop="44dp"
+        android:layout_marginTop="52dp"
         android:ems="10"
         android:hint="Data Targets"
         android:inputType="text"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/SubscribeTextView" />
 
